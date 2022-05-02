@@ -45,7 +45,7 @@ public class UserController {
 
             return "user_form";
         } catch (UserNotFoundException e) {
-            ra.addFlashAttribute("message",  e.getMessage());
+            ra.addFlashAttribute("message", e.getMessage());
             return "redirect:/users";
         }
     }
